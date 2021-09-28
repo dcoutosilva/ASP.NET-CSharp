@@ -1,0 +1,58 @@
+﻿@model ProjetoWeb.Models.Pessoa
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Lista</h2>
+
+<div>
+    <b>
+        @Html.LabelFor(x=>x.Codigo)
+    </b>
+</div>
+<div>
+  
+    @Model.Codigo
+  
+</div>
+
+<div>
+    <b>
+        @Html.LabelFor(x=>x.Nome)
+    </b>
+</div>
+<div>
+    @Model.Nome
+</div>
+
+<div>
+    <b>
+        @Html.LabelFor(x=>x.Rg)
+    </b>
+</div>
+
+<div>
+    @Model.Rg
+</div>
+
+<div>
+    <b>
+        @Html.LabelFor(x=>x.Cpf)
+    </b>
+
+</div>
+
+<div>
+    @Model.Cpf
+</div>
+
+<div>
+    <b>
+        @Html.LabelFor(x=>x.DtNasc)
+    </b>
+</div>
+<div>
+    @Model.DtNasc
+</div>
+
+@Html.ActionLink("Voltar", "index", "Home")
